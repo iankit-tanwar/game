@@ -1,0 +1,57 @@
+// rectange water
+        ctx.fillStyle = "#239CE4";
+        ctx.fillRect(0, 710, 1667, 218);
+
+
+        // Sun structure
+        ctx.strokeStyle = "#239CE4 "
+        ctx.arc(800, 550, 60, 0, 2 * Math.PI);
+        ctx.fillStyle = "#FEF8E7";
+        ctx.fill();
+        ctx.closePath();
+
+
+
+
+
+
+        // Draw the mountain shape
+        ctx.beginPath();
+        ctx.moveTo(150, 300); // Start from the left-bottom corner
+        ctx.lineTo(100, 100); // Draw a line to the peak
+        ctx.lineTo(380, 500); // Draw a line to the right-bottom corner
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        // Fill the mountain shape with the chosen color
+        ctx.fill();
+
+
+        // fonts start game
+        ctx.font = "80px Comic Sans MS";
+        ctx.strokeStyle = "#36ADE8";
+        ctx.lineWidth = 10;
+        ctx.strokeText("StartGame", 600, 814);
+        ctx.fillStyle = "white";
+        ctx.fillText("StartGame", 600, 810);
+
+
+
+        // Set the fill color for the cloud
+        ctx.fillStyle = "red";
+
+        // Draw the cloud
+        ctx.beginPath();
+        ctx.arc(50, 50, 30, 0, Math.PI * 2);
+        ctx.arc(90, 50, 30, 0, Math.PI * 2);
+        ctx.arc(120, 50, 20, 0, Math.PI * 2);
+        ctx.arc(140, 50, 40, 0, Math.PI * 2);
+        ctx.arc(180, 50, 30, 0, Math.PI * 2);
+        ctx.arc(220, 50, 30, 0, Math.PI * 2);
+        ctx.arc(250, 50, 20, 0, Math.PI * 2);
+        ctx.closePath();
+
+        // Fill the cloud with the specified color
+        ctx.fill();
+
+        
+
