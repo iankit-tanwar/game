@@ -34,6 +34,13 @@
         var ctx = canvas.getContext("2d");
         console.log(ctx)
 
+        // Sun structure
+       
+        ctx.arc(800, 550, 70, 0, 2 * Math.PI);
+        ctx.fillStyle = "#FFE124";
+        ctx.fill();
+        ctx.closePath();
+
 
         class Rectangle {
             constructor(x, y, width, height, color, strokeText) {
@@ -98,13 +105,13 @@
         rectangle.Cloud(1300, 90, 50)
 
 
+         
+
+
         function drawBoat() {
 
             ctx.fillStyle = "red"; 
 
-           
-    
-           
             ctx.beginPath(); 
             ctx.moveTo(20, 20);
             ctx.lineTo(100, 20);
@@ -123,6 +130,9 @@
 
 
         drawBoat()
+
+
+        
 
 
 
